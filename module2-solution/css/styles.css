@@ -1,3 +1,70 @@
-.container{
-    padding: 15px;
+html {
+    font: 16px Helvetica, sans-serif;
+  }
+* {
+    box-sizing: border-box;
+}
+h1 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+.bigger-box{
+    position: relative;
+
+}
+p{
+    border: 1px solid black;
+    margin: 10px;
+    padding-top:30px ;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+    background-color: blanchedalmond;
+}
+.smaller-box{
+    position: absolute;
+    top: 0px;
+    right: 0;
+}
+h5{
+    width: 100px;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: center;
+    padding: 5px;
+}
+
+/* Media query for large devices */
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+        width: 33%;
+        float: left;
+    }    
+   
+}
+
+/* Media query for medium devices */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-mg-6 {
+        width: 50%;
+        float: left;
+
+    }
+
+    .col-mg-12 {
+        width: 100%;
+        float: left;
+    }
+  
+}
+/* Media query for smaller devices */
+@media(max-width:767px){
+    .col-sg-12{
+        width: 100%;
+        float: left;
+    }
 }
